@@ -108,7 +108,20 @@ public class FullscreenActivity extends AppCompatActivity {
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toggle();
+                int colorsLength = colors.length;
+                Random random = new Random();
+                int randomNumber = random.nextInt(colorsLength);
+                if (lastRandomNumber == randomNumber) {
+                    if (randomNumber != (colorsLength-1)) {
+                        randomNumber+=1;
+                    }
+                    else {
+                        randomNumber-=1;
+                    }
+                }
+                lastRandomNumber = randomNumber;
+                mainView.setBackgroundColor(colors[randomNumber]);
+                Log.d("Random Number: ",String.valueOf(randomNumber));
             }
         });
 
