@@ -1,4 +1,4 @@
-package com.example.meterstoinches.screentest;
+package com.valentin.suruceanu.screentest;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;

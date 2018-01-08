@@ -1,4 +1,4 @@
-package com.example.meterstoinches.screentest;
+package com.valentin.suruceanu.screentest;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.meterstoinches.screentest;
+package com.valentin.suruceanu.screentest;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
